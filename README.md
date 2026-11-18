@@ -1,6 +1,13 @@
-# SongAnalyst static site (GitHub Pages)
+# SongAnalyst (static demo)
 
-This folder is a **static** front for SongAnalyst: demo stems + Traditional Chinese advice.
+**Live site:** https://kaiho948.github.io/songanalyst-pages/
 
-- Full upload / Demucs / LLM APIs need the Next.js app at the repo root (`npm run dev`).
-- GitHub Pages for the **private** repo is not available on Free plans; the public companion repo hosts this site.
+Bookmarkable static demo: prebuilt stems + Traditional Chinese arrangement tips.
+
+- Full Next.js upload / Demucs / LLM pipeline lives in the **private** repo: https://github.com/kaiho948/songanalyst
+- This public Pages site has **no server** — upload analysis is not available here.
+
+```bash
+# Full app (private clone)
+npm install && npm run dev -- --port 3456
+```
