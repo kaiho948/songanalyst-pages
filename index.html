@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SongAnalyst — 街頭樂隊編曲教練</title>
+    <meta
+      name="description"
+      content="SongAnalyst：上傳／示範歌曲，聽分軌，取得繁中編曲建議。GitHub Pages 靜態示範版。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <img src="assets/hero-street.jpg" alt="" />
+          <div class="hero-shade"></div>
+        </div>
+        <header class="top">
+          <span class="brand-mark">SongAnalyst</span>
+          <span class="top-note">香港街頭樂隊編曲教練</span>
+        </header>
+        <div class="hero-copy">
+          <p class="eyebrow">For busking bands</p>
+          <h1 class="brand-mark hero-title">SongAnalyst</h1>
+          <p class="lede">
+            上傳歌曲，拆出分軌，再用繁中給 Lead／節奏結他／Bass／鼓／鍵盤／人聲可執行的編曲建議。
+          </p>
+          <div class="cta-row">
+            <a class="btn-primary" href="#demo">試聽示範</a>
+            <a class="btn-ghost" href="#limits">此站能做什麼</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="limits" class="section">
+        <div class="wrap narrow">
+          <div class="notice">
+            <strong>GitHub Pages 靜態示範版</strong>
+            <p>
+              這個網址是純前端（沒有伺服器）。你可以隨時打開示範曲、聽分軌、複製繁中建議。
+              <em>完整上傳分析</em>（ffmpeg／Demucs／LLM）需要本機跑
+              <code>npm run dev</code>，之後才可接 API keys。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" class="section">
+        <div class="wrap">
+          <h2 class="section-title">示範曲 Midnight Crossing</h2>
+          <p class="muted">
+            一鍵載入預建分軌＋繁中編曲建議（無需登入、無需 API key）。
+          </p>
+          <div class="actions">
+            <button id="load-demo" class="btn-primary" type="button">
+              載入示範結果
+            </button>
+            <button id="copy-advice" class="btn-ghost" type="button" disabled>
+              複製建議全文
+            </button>
+          </div>
+          <p id="status" class="status" aria-live="polite"></p>
+
+          <div id="result" class="result hidden">
+            <div class="result-head">
+              <h3 id="song-title" class="section-title"></h3>
+              <p id="song-summary" class="muted"></p>
+              <div id="mir-badges" class="badges"></div>
+            </div>
+
+            <h4 class="section-title sub">可下載／試聽分軌</h4>
+            <div id="stems" class="stem-grid"></div>
+
+            <div class="advice-head">
+              <h4 class="section-title sub">編曲建議（繁中）</h4>
+              <div id="role-filters" class="filters"></div>
+            </div>
+            <div id="advice" class="advice-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="upload-note" class="section">
+        <div class="wrap narrow">
+          <h2 class="section-title">想分析自己的歌？</h2>
+          <p class="muted">
+            在有 Node／ffmpeg 的電腦 clone 私有倉庫後：
+          </p>
+          <pre class="code">cd songanalyst
+npm install
+npm run dev -- --port 3456
+# 打開 http://127.0.0.1:3456 上傳音檔</pre>
+          <p class="muted small">
+            靜態 Pages <strong>不能</strong>跑 Demucs／伺服器端分軌。上傳分析請用本機 Next
+            app。
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span class="brand-mark">SongAnalyst</span>
+        <span>靜態示範 · Jonathan Lo／香港 busking</span>
+      </footer>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

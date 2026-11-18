@@ -1,0 +1,299 @@
+{
+  "title": "Midnight Crossing（示範曲）",
+  "summaryZh": "這首歌粗估約 96 BPM、調性 G 大調，時長約 16 秒。建議街頭編制先把「人聲＋節奏結他＋Bass＋鼓」鎖穩，Lead／鍵盤在副歌再加厚。以下按段落給各樂器可執行短建議；練習時可對照分軌聽原曲聲部。",
+  "mir": {
+    "bpm": 96,
+    "key": "G",
+    "mode": "major",
+    "durationSec": 16,
+    "sections": [
+      {
+        "id": "sec_0",
+        "kind": "intro",
+        "labelZh": "前奏",
+        "startSec": 0,
+        "endSec": 4
+      },
+      {
+        "id": "sec_1",
+        "kind": "verse",
+        "labelZh": "主歌",
+        "startSec": 4,
+        "endSec": 8
+      },
+      {
+        "id": "sec_2",
+        "kind": "chorus",
+        "labelZh": "副歌",
+        "startSec": 8,
+        "endSec": 12
+      },
+      {
+        "id": "sec_3",
+        "kind": "outro",
+        "labelZh": "尾奏",
+        "startSec": 12,
+        "endSec": 16
+      }
+    ],
+    "confidence": "demo"
+  },
+  "stems": [
+    {
+      "name": "vocals",
+      "labelZh": "人聲",
+      "url": "assets/stems/vocals.mp3"
+    },
+    {
+      "name": "drums",
+      "labelZh": "鼓組",
+      "url": "assets/stems/drums.mp3"
+    },
+    {
+      "name": "bass",
+      "labelZh": "Bass",
+      "url": "assets/stems/bass.mp3"
+    },
+    {
+      "name": "guitar",
+      "labelZh": "結他",
+      "url": "assets/stems/guitar.mp3"
+    },
+    {
+      "name": "piano",
+      "labelZh": "鍵盤／鋼琴",
+      "url": "assets/stems/piano.mp3"
+    },
+    {
+      "name": "other",
+      "labelZh": "其他",
+      "url": "assets/stems/other.mp3"
+    }
+  ],
+  "advice": [
+    {
+      "sectionId": "sec_0",
+      "sectionLabelZh": "前奏",
+      "startSec": 0,
+      "endSec": 4,
+      "instruments": [
+        {
+          "role": "leadGuitar",
+          "labelZh": "Lead 結他",
+          "tips": [
+            "用 G 大調 開放弦或簡單填空音，音量壓低，留空間給氣氛建立。",
+            "避免連續十六分音；每兩小節一句短動機即可。",
+            "效果器：輕延遲／短混響；街頭環境忌過長尾音。"
+          ]
+        },
+        {
+          "role": "rhythmGuitar",
+          "labelZh": "節奏結他",
+          "tips": [
+            "用悶音或稀疏下撥確立 96 BPM 脈搏。",
+            "和弦以 I–V 或 I–vi 起步即可，留白多於花音。"
+          ]
+        },
+        {
+          "role": "bass",
+          "labelZh": "Bass",
+          "tips": [
+            "根音長音或簡單八分，鎖鼓的大鼓點。",
+            "先確定調性 G 大調 的 I、V。"
+          ]
+        },
+        {
+          "role": "drums",
+          "labelZh": "鼓組",
+          "tips": [
+            "軍鼓輕刷或側擊，大鼓點到為止；建立 96。",
+            "Intro 可先只有 Hi-hat＋大鼓。"
+          ]
+        },
+        {
+          "role": "keys",
+          "labelZh": "鍵盤",
+          "tips": [
+            "Pad 或電鋼琴長和弦，鋪 G 大調 氣氛。",
+            "右手少旋律，留給結他／人聲。"
+          ]
+        },
+        {
+          "role": "vocals",
+          "labelZh": "人聲",
+          "tips": [
+            "Intro 可不唱或只哼動機；留呼吸給進歌。"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_1",
+      "sectionLabelZh": "主歌",
+      "startSec": 4,
+      "endSec": 8,
+      "instruments": [
+        {
+          "role": "leadGuitar",
+          "labelZh": "Lead 結他",
+          "tips": [
+            "主歌用對答式短句，避開人聲旋律核心音。",
+            "多用 3–5 度和音，少用密集和弦掃弦搶節奏結他。",
+            "動態：比副歌低一檔；可在句尾加一拍休止。"
+          ]
+        },
+        {
+          "role": "rhythmGuitar",
+          "labelZh": "節奏結他",
+          "tips": [
+            "穩定四分或八分下撥；力度均勻，服務人聲。",
+            "轉位避開 Bass 根音重疊：主歌多用 1、5 弦少彈。",
+            "街道噪音大時，加厚中頻比加效果更重要。"
+          ]
+        },
+        {
+          "role": "bass",
+          "labelZh": "Bass",
+          "tips": [
+            "主歌用根－五度為主，少走花；跟人聲氣口對齊。",
+            "每兩小節才加一次過渡音，保持街頭可聽度。"
+          ]
+        },
+        {
+          "role": "drums",
+          "labelZh": "鼓組",
+          "tips": [
+            "標準 rock／pop groove；主歌開 Hi-hat，力度中等。",
+            "Fill 只在段尾 1–2 拍，勿每小節都炸。"
+          ]
+        },
+        {
+          "role": "keys",
+          "labelZh": "鍵盤",
+          "tips": [
+            "用簡單三和弦或七和弦；音區避開人聲中頻。",
+            "可彈弱拍補洞，勿與節奏結他同節奏型。"
+          ]
+        },
+        {
+          "role": "vocals",
+          "labelZh": "人聲",
+          "tips": [
+            "咬字清晰、音量穩；街道競爭噪音，字頭要乾淨。",
+            "主歌情緒敘事，勿過早用副歌力道。"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_2",
+      "sectionLabelZh": "副歌",
+      "startSec": 8,
+      "endSec": 12,
+      "instruments": [
+        {
+          "role": "leadGuitar",
+          "labelZh": "Lead 結他",
+          "tips": [
+            "副歌可彈主歌動機的高八度變奏，或固定 Hook 句。",
+            "注意與人聲同音區衝突：人聲唱時改填空或長音。",
+            "街頭演出：一個容易記住的 2 小節 Hook 勝過複雜 solo。"
+          ]
+        },
+        {
+          "role": "rhythmGuitar",
+          "labelZh": "節奏結他",
+          "tips": [
+            "全開掃弦，強調強拍；副歌可加掛留音（sus）增加張力。",
+            "與 Lead 分工：你負責和聲床，他負責旋律線。"
+          ]
+        },
+        {
+          "role": "bass",
+          "labelZh": "Bass",
+          "tips": [
+            "副歌加厚：八度跳或切分，但仍跟著大鼓。",
+            "避免與 Kick 同時打太密的十六分，街頭 PA 會糊。"
+          ]
+        },
+        {
+          "role": "drums",
+          "labelZh": "鼓組",
+          "tips": [
+            "副歌開 Crash、大鼓可加同步；保持可跳舞的穩定。",
+            "街頭：軍鼓勿過響蓋人聲；優先穩過炫。"
+          ]
+        },
+        {
+          "role": "keys",
+          "labelZh": "鍵盤",
+          "tips": [
+            "加厚和聲；可疊八度，但左腳／左手勿蓋 Bass。",
+            "街頭鍵盤音量常被低估——先聽人聲再調。"
+          ]
+        },
+        {
+          "role": "vocals",
+          "labelZh": "人聲",
+          "tips": [
+            "副歌可加和聲；一人主唱時用力度與母音打開度區隔。",
+            "記得給樂隊 cue：段尾舉手或點頭。"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_3",
+      "sectionLabelZh": "尾奏",
+      "startSec": 12,
+      "endSec": 16,
+      "instruments": [
+        {
+          "role": "leadGuitar",
+          "labelZh": "Lead 結他",
+          "tips": [
+            "收回密度，重複副歌 Hook 半速或切半，然後乾淨收束。"
+          ]
+        },
+        {
+          "role": "rhythmGuitar",
+          "labelZh": "節奏結他",
+          "tips": [
+            "掃弦漸弱，最後一拍與鼓同時停。"
+          ]
+        },
+        {
+          "role": "bass",
+          "labelZh": "Bass",
+          "tips": [
+            "回到根音長音，最後一拍乾淨截止。"
+          ]
+        },
+        {
+          "role": "drums",
+          "labelZh": "鼓組",
+          "tips": [
+            "漸弱或突然停在段尾；與樂隊眼神對齊。"
+          ]
+        },
+        {
+          "role": "keys",
+          "labelZh": "鍵盤",
+          "tips": [
+            "Pad 漸弱，最後留一個主和弦。"
+          ]
+        },
+        {
+          "role": "vocals",
+          "labelZh": "人聲",
+          "tips": [
+            "重複副歌 Hook 後收束；最後一句可 a cappella。"
+          ]
+        }
+      ]
+    }
+  ],
+  "separationMode": "demo",
+  "coachMode": "template",
+  "mixUrl": "assets/midnight-crossing.mp3"
+}
